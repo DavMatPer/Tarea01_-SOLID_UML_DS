@@ -1,0 +1,42 @@
+Explicación de los Diagramas de Casos de Uso - TicketBeat
+
+Orden lógico de las funcionalidades
+
+1.  Compra de Entradas Es el punto de entrada principal del sistema. El
+    comprador busca un evento, selecciona la cantidad y tipo de entradas
+    y realiza la compra. Durante este proceso el sistema procesa
+    automáticamente el pago mediante el sistema de pago externo.
+
+2.  Gestión de Notificaciones Una vez que ocurre un evento importante
+    (por ejemplo, una compra confirmada, un cambio de fecha, una
+    cancelación o un anuncio del organizador), el sistema identifica a
+    los compradores afectados, genera el mensaje correspondiente,
+    selecciona el canal de comunicación y envía la notificación mediante
+    un servicio externo.
+
+3.  Gestión del Evento El organizador administra el evento configurando
+    políticas de devolución, restricciones de compra y gestionando
+    cancelaciones o cambios de fecha. Cuando se produce una cancelación
+    o un cambio de fecha, el sistema puede realizar devoluciones de
+    dinero o intercambiar boletos y posteriormente generar
+    notificaciones para los compradores.
+
+4.  Gestión de Incidentes Si un comprador tiene problemas con el pago o
+    con sus boletos digitales, puede reportar un incidente. Un agente de
+    soporte intenta resolverlo y, si no es posible, el incidente se
+    escala al administrador del evento para su resolución final.
+
+Relación entre los diagramas
+
+-   La Compra de Entradas es el proceso principal.
+-   La Gestión de Notificaciones es transversal y puede ejecutarse
+    después de una compra, un cambio de fecha, una cancelación o
+    cualquier anuncio relevante.
+-   La Gestión del Evento puede provocar notificaciones y afectar las
+    compras existentes.
+-   La Gestión de Incidentes funciona como un proceso de soporte cuando
+    ocurre algún problema durante o después de la compra.
+
+Este orden representa el flujo funcional más habitual dentro del sistema
+TicketBeat y facilita mantener la consistencia entre los diagramas de
+casos de uso, de secuencia y de clases.
