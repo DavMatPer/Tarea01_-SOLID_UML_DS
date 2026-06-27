@@ -9,5 +9,15 @@ package com.ticketbeat.servicios;
  * @author Rafael Cosmo
  */
 public class CanalEmail {
-    
+    @Override
+    public boolean enviar(String mensaje) {
+        System.out.println("[EMAIL] Enviando correo: " + mensaje);
+        return true;
+    }
+
+    @Override
+    public boolean verificarDisponibilidad() {
+        return true; 
+    }
+
 }

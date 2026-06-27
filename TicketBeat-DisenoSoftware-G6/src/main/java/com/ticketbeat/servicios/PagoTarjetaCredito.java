@@ -9,5 +9,16 @@ package com.ticketbeat.servicios;
  * @author Rafael Cosmo
  */
 public class PagoTarjetaCredito {
-    
+    @Override
+    public boolean procesarPago(double monto) {
+        System.out.println("[VISA/MASTERCARD] Procesando cobro por $" + monto);
+        return true;
+    }
+
+    @Override
+    public boolean revertirPago(double monto) {
+        System.out.println("[VISA/MASTERCARD] Reembolsando $" + monto + " a la tarjeta.");
+        return true;
+    }
+
 }

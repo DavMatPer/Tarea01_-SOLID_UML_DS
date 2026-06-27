@@ -9,5 +9,15 @@ package com.ticketbeat.servicios;
  * @author Rafael Cosmo
  */
 public class PagoMovil {
-    
+    @Override
+    public boolean procesarPago(double monto) {
+        System.out.println("[APP MÃ“VIL] Cobro rÃ¡pido procesado por $" + monto);
+        return true;
+    }
+
+    @Override
+    public boolean revertirPago(double monto) {
+        System.out.println("[APP MÃ“VIL] Reembolso enviado a la billetera digital.");
+        return true;
+    } 
 }
