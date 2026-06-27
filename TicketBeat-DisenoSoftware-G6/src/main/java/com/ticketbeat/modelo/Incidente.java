@@ -8,10 +8,11 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
-public class NotificacionMensaje {
-    private String asunto;
-    private String contenido;
+public class Incidente {
+    private String idTicket;
+    private String descripcion;
+    private String estado;
 
-    public String getContenido() { return contenido; }
-    public void setContenido(String contenido) { this.contenido = contenido; }
+    public String getDescripcion() { return descripcion; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 }

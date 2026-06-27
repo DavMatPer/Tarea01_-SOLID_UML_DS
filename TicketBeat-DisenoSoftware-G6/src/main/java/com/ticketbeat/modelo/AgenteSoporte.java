@@ -8,6 +8,23 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
-public class AgenteSoporte {
+import com.ticketbeat.interfaces.IResolvedor;
+
+public class AgenteSoporte extends Usuario implements IResolvedor {
     
+    @Override
+    public boolean resolver(Incidente incidente) {
+        return aplicarAccionPrimerNivel();
+    }
+
+    @Override
+    public boolean escalar(Incidente incidente) {
+        return true; 
+    }
+
+    public boolean aplicarAccionPrimerNivel() {
+        System.out.println("Agente de Soporte: Intentando resolver en primer nivel...");
+        
+        return false; 
+    }
 }

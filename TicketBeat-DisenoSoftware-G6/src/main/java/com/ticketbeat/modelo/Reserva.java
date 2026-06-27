@@ -8,6 +8,14 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
+import java.util.Date;
+import java.util.List;
+
 public class Reserva {
-    
+    private String id;
+    private Comprador comprador;
+    private List<Boleto> boletosReservados;
+    private Date fechaExpiracion;
+
+    public Comprador getComprador() { return comprador; }
 }

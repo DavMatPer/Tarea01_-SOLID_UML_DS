@@ -8,6 +8,13 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
-public class Usuario {
-    
+public abstract class Usuario {
+    protected String id;
+    protected String nombre;
+    protected String email;
+    protected String telefono;
+
+  
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 }

@@ -8,6 +8,23 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
-public class AdminEvento {
-    
+import com.ticketbeat.interfaces.IResolvedor;
+
+public class AdminEvento extends Usuario implements IResolvedor {
+
+    @Override
+    public boolean resolver(Incidente incidente) {
+        return aplicarResolucionFinal();
+    }
+
+    @Override
+    public boolean escalar(Incidente incidente) {
+        System.out.println("El Admin del Evento es el nivel más alto. No se puede escalar mas.");
+        return false; 
+    }
+
+    public boolean aplicarResolucionFinal() {
+        System.out.println("Admin del Evento: Aplicando resolución final y cerrando incidente.");
+        return true;
+    }
 }

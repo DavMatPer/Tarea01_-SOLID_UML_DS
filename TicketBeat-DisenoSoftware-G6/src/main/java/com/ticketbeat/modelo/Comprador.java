@@ -8,6 +8,12 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
-public class Comprador {
-    
+import com.ticketbeat.interfaces.ICanal;
+
+public class Comprador extends Usuario {
+    private ICanal canalPreferido;
+    private int limiteCompra;
+
+    public ICanal getCanalPreferido() { return canalPreferido; }
+    public void setCanalPreferido(ICanal canalPreferido) { this.canalPreferido = canalPreferido; }
 }
