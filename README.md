@@ -22,4 +22,4 @@ INTEGRANTE 4: DANIEL NEGRETE
 
 - 2 diagramas de secuencia
 - README
--Documento PDF entregable
+- Documento PDF entregable
