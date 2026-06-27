@@ -9,5 +9,16 @@ package com.ticketbeat.servicios;
  * @author Rafael Cosmo
  */
 public class PagoTransferencia {
-    
+    @Override
+    public boolean procesarPago(double monto) {
+        System.out.println("[BANCO] Validando transferencia bancaria por $" + monto);
+        return true;
+    }
+
+    @Override
+    public boolean revertirPago(double monto) {
+        System.out.println("[BANCO] Extornando $" + monto + " a la cuenta de origen.");
+        return true;
+    }
+
 }

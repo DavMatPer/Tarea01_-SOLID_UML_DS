@@ -9,5 +9,15 @@ package com.ticketbeat.servicios;
  * @author Rafael Cosmo
  */
 public class CanalSMS {
-    
+    @Override
+    public boolean enviar(String mensaje) {
+        System.out.println("[SMS] Enviando mensaje de texto: " + mensaje);
+        return true;
+    }
+
+    @Override
+    public boolean verificarDisponibilidad() {
+        return true; 
+    }
+
 }
