@@ -9,5 +9,7 @@ package com.ticketbeat.interfaces;
  * @author Rafael Cosmo
  */
 public interface IProveedorPago {
-    
+    boolean procesarPago(double monto);
+    boolean revertirPago(double monto);
 }
+

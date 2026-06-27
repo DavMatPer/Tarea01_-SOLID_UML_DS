@@ -8,6 +8,10 @@ package com.ticketbeat.interfaces;
  *
  * @author Rafael Cosmo
  */
+import com.ticketbeat.modelo.Incidente;
+
 public interface IResolvedor {
-    
+    boolean resolver(Incidente incidente);
+    boolean escalar(Incidente incidente);
 }
+

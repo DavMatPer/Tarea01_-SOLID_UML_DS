@@ -9,5 +9,6 @@ package com.ticketbeat.interfaces;
  * @author Rafael Cosmo
  */
 public interface IGestionableEvento {
-    
+    boolean cancelar();
+    boolean cambiarFecha();
 }
