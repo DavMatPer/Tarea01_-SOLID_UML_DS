@@ -9,5 +9,11 @@ package com.ticketbeat.modelo;
  * @author Rafael Cosmo
  */
 public class Boleto {
-    
+    private String id;
+    private EstadoBoleto estado;
+    private double precio;
+    private String tipo;
+
+    public EstadoBoleto getEstado() { return estado; }
+    public void setEstado(EstadoBoleto estado) { this.estado = estado; }
 }

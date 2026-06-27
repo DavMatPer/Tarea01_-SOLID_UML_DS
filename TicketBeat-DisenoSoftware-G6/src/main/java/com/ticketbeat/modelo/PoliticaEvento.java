@@ -8,6 +8,17 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
+import java.util.ArrayList;
+import java.util.List;
+
 public class PoliticaEvento {
+    private String descripcion;
+    private double porcentajeDevolucion;
+
     
+    public List<Boleto> aplicarPoliticaDevolucion(Evento evento) {
+        System.out.println("Aplicando políticas de devolución para el evento...");
+        
+        return new ArrayList<>(); 
+    }
 }

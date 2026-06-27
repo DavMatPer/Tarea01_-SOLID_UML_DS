@@ -8,6 +8,9 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
-public class Organizador {
-    
+public class Organizador extends Usuario {
+    private String nombreEmpresa;
+
+    public String getNombreEmpresa() { return nombreEmpresa; }
+    public void setNombreEmpresa(String nombreEmpresa) { this.nombreEmpresa = nombreEmpresa; }
 }

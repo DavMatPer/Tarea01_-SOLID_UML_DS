@@ -8,6 +8,9 @@ package com.ticketbeat.modelo;
  *
  * @author Rafael Cosmo
  */
-public class EstadoBoleto {
-    
+public enum EstadoBoleto {
+    DISPONIBLE, 
+    RESERVADO, 
+    VENDIDO, 
+    CANCELADO
 }
