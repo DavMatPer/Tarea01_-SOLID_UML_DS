@@ -4,11 +4,13 @@
  */
 package com.ticketbeat.servicios;
 
+import com.ticketbeat.interfaces.IProveedorPago;
+
 /**
  *
  * @author Rafael Cosmo
  */
-public class PagoTransferencia {
+public class PagoTransferencia implements IProveedorPago {
     @Override
     public boolean procesarPago(double monto) {
         System.out.println("[BANCO] Validando transferencia bancaria por $" + monto);

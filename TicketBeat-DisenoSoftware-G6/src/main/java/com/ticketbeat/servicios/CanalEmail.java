@@ -4,11 +4,13 @@
  */
 package com.ticketbeat.servicios;
 
+import com.ticketbeat.interfaces.ICanal;
+
 /**
  *
  * @author Rafael Cosmo
  */
-public class CanalEmail {
+public class CanalEmail implements ICanal{
     @Override
     public boolean enviar(String mensaje) {
         System.out.println("[EMAIL] Enviando correo: " + mensaje);

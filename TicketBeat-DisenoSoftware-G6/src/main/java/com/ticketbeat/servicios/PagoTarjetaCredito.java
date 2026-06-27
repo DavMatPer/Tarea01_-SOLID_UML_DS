@@ -4,11 +4,13 @@
  */
 package com.ticketbeat.servicios;
 
+import com.ticketbeat.interfaces.IProveedorPago;
+
 /**
  *
  * @author Rafael Cosmo
  */
-public class PagoTarjetaCredito {
+public class PagoTarjetaCredito implements IProveedorPago {
     @Override
     public boolean procesarPago(double monto) {
         System.out.println("[VISA/MASTERCARD] Procesando cobro por $" + monto);

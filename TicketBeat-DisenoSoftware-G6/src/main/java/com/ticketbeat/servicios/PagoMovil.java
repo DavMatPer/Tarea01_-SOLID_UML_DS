@@ -4,11 +4,13 @@
  */
 package com.ticketbeat.servicios;
 
+import com.ticketbeat.interfaces.IProveedorPago;
+
 /**
  *
  * @author Rafael Cosmo
  */
-public class PagoMovil {
+public class PagoMovil implements IProveedorPago {
     @Override
     public boolean procesarPago(double monto) {
         System.out.println("[APP MÃ“VIL] Cobro rÃ¡pido procesado por $" + monto);

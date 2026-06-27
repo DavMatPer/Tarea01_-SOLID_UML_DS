@@ -4,11 +4,13 @@
  */
 package com.ticketbeat.servicios;
 
+import com.ticketbeat.interfaces.ICanal;
+
 /**
  *
  * @author Rafael Cosmo
  */
-public class CanalSMS {
+public class CanalSMS implements ICanal {
     @Override
     public boolean enviar(String mensaje) {
         System.out.println("[SMS] Enviando mensaje de texto: " + mensaje);
