@@ -1,3 +1,6 @@
+# Comentario
+Se agrego en el .rar una carpeta con los diagramas por si en el 
+PDF no se aprecian muy bien.
 # Tarea01_-SOLID_UML_DS
 
 INTEGRANTE 1: DAVID MATOS
@@ -19,3 +22,4 @@ INTEGRANTE 4: DANIEL NEGRETE
 
 - 2 diagramas de secuencia
 - README
+-Documento PDF entregable
